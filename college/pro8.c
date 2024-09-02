@@ -10,7 +10,7 @@ void main()
  scanf("%d",&n);
  switch(n)
 { case 1:
- printf("Enter the elements for 3x3 matrix \n");
+ printf("Enter the elements for 3x4 matrix \n");
  for(i=0;i<3;i++)
  { for(j=0;j<4;j++)
    { scanf("%d",&a[i][j]);
@@ -32,13 +32,13 @@ void main()
  case 2:
  printf("enter elements\n");
  for(i=0;i<3;i++)
- { for(j=0;j<3;j++)
+ { for(j=0;j<4;j++)
    { scanf("%d",&a[j][i]);
    }
  }
   printf("\n column major order\n");
  for(i=0;i<3;i++)
- { for(j=0;j<3;j++)
+ { for(j=0;j<4;j++)
    { printf("%d \t",a[i][j]);
    }
  printf("\n");
