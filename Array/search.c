@@ -16,11 +16,11 @@ void display(struct array arr)
        printf("%d\n",arr.a[i]);
     }
 }
-int search(struct array *arr,int key)
+int search(struct array arr,int key)
 {
-    for(i=0;i<arr->length;i++)
+    for(i=0;i<arr.length;i++)
     {
-        if(arr->a[i]==key)
+        if(arr.a[i]==key)
         return i;
     }
     return -1;
@@ -31,7 +31,7 @@ int main ()
    
     display(arr);
    
-    printf("%d is loc",search(&arr,5));
+    printf("%d is loc",search(arr,5));
    
     
     return 0;
